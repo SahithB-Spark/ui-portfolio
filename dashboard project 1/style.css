@@ -1,0 +1,29 @@
+.dropdown-item:hover{
+    background: linear-gradient(45deg,black,darkslategrey);
+    color: white !important;
+    box-shadow: 0 0 5px black;
+}
+.bg-teal{
+    background-color: rgb(245, 108, 29) !important;
+}
+.btn-primary{
+    background: linear-gradient(45deg,darkslategrey,cornflowerblue);
+}
+.bg-primary{
+    background: linear-gradient(45deg,darkslategrey,cornflowerblue);
+}
+.bg-secondary{
+    background: linear-gradient(45deg,darkslategrey,purple);
+}
+.btn-success{
+background: linear-gradient(45deg,darkslategrey,limegreen);
+}
+.bg-success{
+    background: linear-gradient(45deg,darkslategrey,limegreen);
+    }
+.btn-warning{
+    background: linear-gradient(45deg,darkslategrey,coral);
+}
+.bg-warning{
+    background: linear-gradient(45deg,darkslategrey,coral);
+}

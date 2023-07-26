@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Smart</title>
+    <!--Bootstrap CSS Files-->
+    <link rel="stylesheet"  href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet"  href="bootstrap/css/fontawesome5.8.1.css">
+    <link rel="stylesheet"  href="bootstrap/css/mdb.css">
+    <link rel="stylesheet"  href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+<!--Main Navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+         <a href="index.html" class="navbar-brand text-warning">
+            <i class="fa fa-snowflake"></i> B SMART
+         </a>
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#ui-navbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="ui-navbar">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-chart-bar text-muted"></i> Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-list text-muted"></i> Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-sitemap text-muted"></i> Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-users text-muted"></i> Employees</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" data-toggle="dropdown">
+                        <i class="fa fa-sign-in-alt text-muted"></i> BGKPH</a>
+                        <div class="dropdown-menu p-2">
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-user-circle"></i>Profile</a>
+                            <a href="#" class="dropdown-item">
+                                <i class="fa fa-cogs"></i>Settings</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-sign-out-alt text-muted"></i> Logout</a>
+                </li>
+            </ul>
+         </div>
+    </div>
+</nav>
+
+
+    <!--Dashboard Section-->
+    <section class="p-2 bg-teal text-white">
+        <div class="container">
+         <div class="row">
+         <h1>
+            <i class="fa fa-chart-bar"></i> Dashboard</h1>
+         </div>
+        </div>
+    </section>
+
+
+      <!--Buttons Section-->
+      <section class="p-2 bg-light">
+       <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#task-modal">
+           <i class="fa fa-plus-circle"></i> Add Task 
+        </button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-success btn-block" data-toggle="modal" data-target="#category-modal">
+               <i class="fa fa-plus-circle"></i> Add Category
+            </button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#employee-modal">
+                   <i class="fa fa-plus-circle"></i> Add Employee  
+                </button>
+                </div>            
+        </div>
+       </div>
+      </section>
+
+
+
+    <!--Main Content Section-->
+     <section class="p-3">
+      <div class="container">
+       <div class="row">
+           <div class="col-md-9">
+        <div class="card">
+        <div class="card-header bg-secondary text-white">
+                <h3>Current Tasks</h3>
+        </div>
+        <div class="card-body bg-light">
+            <table class="table table-hover text-center">
+                <thead class="bg-dark text-white">
+                   <tr>
+                       <th>SNO</th>
+                       <th>NAME</th>
+                       <th>EMAIL</th>
+                       <th>TASK</th>
+                       <th>LEVEL</th>
+                       <th>CATEGORY</th>
+                       <th>DETAILS</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Raja</td>
+                        <td>Raja@bsmart.com</td>
+                        <td>Automation of Emails</td>
+                        <td> Medium</td>
+                        <td>Development</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Raja</td>
+                        <td>Raja@bsmart.com</td>
+                        <td>Automation of Emails</td>
+                        <td> Medium</td>
+                        <td>Development</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Raja</td>
+                        <td>Raja@bsmart.com</td>
+                        <td>Automation of Emais</td>
+                        <td> Medium</td>
+                        <td>Development</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Raja</td>
+                        <td>Raja@bsmart.com</td>
+                        <td>Automation of Emails</td>
+                        <td> Medium</td>
+                        <td>Development</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    <var> <tr>
+                        <td>5</td>
+                        <td>Raja</td>
+                        <td>Raja@bsmart.com</td>
+                        <td>Automation of Emails</td>
+                        <td> Medium</td>
+                        <td>Development</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Raja</td>
+                        <td>Raja@bsmart.com</td>
+                        <td>Automation of Emails</td>
+                        <td> Medium</td>
+                        <td>Development</td>
+                        <td>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                        </td>
+                    </tr></var>
+                 </tbody>
+                 <tr>
+                    <td>7</td>
+                    <td>Raja</td>
+                    <td>Raja@bsmart.com</td>
+                    <td>Automation of Emails</td>
+                    <td> Medium</td>
+                    <td>Development</td>
+                    <td>
+                        <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                    </td>
+                </tr>
+               </table>
+        </div>
+           </div>
+           </div>
+           <div class="col-md-3">
+          <div class="card">
+            <div class="card-header bg-primary text-white">
+             <div class="row align-items-center">
+                <div class="col">
+                <i class="fa fa-list fa-4x"></i>
+                </div>
+                <div class="col">
+                <h3 class="display-3">07</h3>
+                <h6>Tasks</h6>
+                </div>
+             </div>
+            </div>
+            <div class="card-footer text-center">
+             <h4>
+                <a href="#" class="text-primary">
+                    View Details <i class="fa fa-arrow-alt-circle-right"></i>
+                </a>
+             </h4>
+            </div>
+          </div>
+          <div class="card mt-4">
+            <div class="card-header bg-success text-white">
+             <div class="row align-items-center">
+                <div class="col">
+                <i class="fa fa-sitemap fa-4x"></i>
+                </div>
+                <div class="col">
+                <h3 class="display-3">07</h3>
+                <h6>Categories </h6>
+                </div>
+             </div>
+            </div>
+            <div class="card-footer text-center">
+             <h4>
+                <a href="#" class="text-success">
+                    View Details <i class="fa fa-arrow-alt-circle-right"></i>
+                </a>
+             </h4>
+            </div>
+          </div>
+          <div class="card mt-4">
+            <div class="card-header bg-warning text-white">
+             <div class="row align-items-center">
+                <div class="col">
+                <i class="fa fa-users fa-4x"></i>
+                </div>
+                <div class="col">
+                <h3 class="display-3">07</h3>
+                <h6>Employees</h6>
+                </div>
+             </div>
+            </div>
+            <div class="card-footer text-center">
+             <h4>
+                <a href="#" class="text-warning">
+                    View Details <i class="fa fa-arrow-alt-circle-right"></i>
+                </a>
+             </h4>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+     </section>
+
+    <!--Main Footer-->
+    <footer class="p-3 bg-dark text-white text-center">
+     <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy; 2023, BSmart.com</h3>   
+                <h6>All Rights Reserved</h6>
+                <h6>Developed and Maintained by
+                 <a class="text-warning" href="#">BGKPH</a>
+                </h6>
+            </div>
+        </div>
+     </div>
+    </footer>
+
+    <!--Task Modal-->
+    
+  <div class="modal" id="task-modal">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content animated jackInTheBox">
+        <div class="modal-header bg-primary text-white">
+         <h3>Add Task</h3>
+         <button class="close" data-dismiss="modal">
+            <i class="fa fa-times-circle"></i>
+         </button>
+        </div>
+        <div class="modal-body bg-light">
+         <form>
+            <div class="form-group">
+                <label class="form-check-label">Title</label>
+                <input type="text" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <label class="form-check-label">Category</label>
+                <select class="form-control">
+                <option value="">Select a Category</option>
+                <option value="">Development</option>
+                <option value="">Maintenance</option>
+                <option value="">Production Support</option>
+                <option value="">Client Meetings</option>
+                <option value="">Bug Fixing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-check-label">Image Upload</label>
+                <input type="file" class="form-control-file" >
+                <small>Max Size: 3MB</small>
+            </div>
+            <div class="form-group">
+                <label class="form-check-label">Description</label>
+               <textarea name="editor1" rows="4" class="form-control" placeholder="Description">
+               </textarea>
+            </div>
+            <div> 
+                <input type="submit" class="btn btn-primary" value="Add Task">
+                <a href="#" data-dismiss="modal" class="btn btn-dark">close</a>
+            </div>
+         </form>
+        </div>
+    </div>
+   </div>
+  </div>
+     <!--Category Modal-->
+    
+  <div class="modal" id="category-modal">
+    <div class="modal-dialog modal-lg">
+     <div class="modal-content animated flipInX">
+         <div class="modal-header bg-success text-white">
+          <h3>Add Task</h3>
+          <button class="close" data-dismiss="modal">
+             <i class="fa fa-times-circle"></i>
+          </button>
+         </div>
+         <div class="modal-body bg-light">
+          <form>
+             <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Category-Name">
+             </div>
+             <div class="form-group">
+                <input type="date" class="form-control">
+            </div>
+            <div> 
+                <input type="submit" class="btn btn-success" value="Add Category">
+                <a href="#" data-dismiss="modal" class="btn btn-dark">close</a>
+             </div>
+          </form>
+         </div>
+     </div>
+    </div>
+   </div>
+
+       <!--EmployeeModal-->
+    
+  <div class="modal" id="employee-modal">
+    <div class="modal-dialog modal-lg">
+     <div class="modal-content animated flipInY">
+         <div class="modal-header bg-success text-white">
+          <h3>Add Task</h3>
+          <button class="close" data-dismiss="modal">
+             <i class="fa fa-times-circle"></i>
+          </button>
+         </div>
+         <div class="modal-body bg-light">
+          <form>
+             <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Employee-Name">
+             </div>
+             <div class="form-group">
+                <input type="text" class="form-control" placeholder="Employee-Email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Default Password">
+            </div>
+            
+            <div> 
+                <input type="submit" class="btn btn-warning" value="Add Employee">
+                <a href="#" data-dismiss="modal" class="btn btn-dark">close</a>
+             </div>
+          </form>
+         </div>
+     </div>
+    </div>
+   </div>
+    <!--BOOTSTRAP Js Files-->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/mdb.js"></script>
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>
